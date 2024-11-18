@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="" method="post">
+        <fieldset>        <legend>Login Information</legend>
+       
+
+    <label for="username">Username: *</label><br>
+    <input required maxlength="10" type="text" id="username" name="username"><br><br>
+
+
+    <label for="password">Password: *</label><br>
+    <input required maxlength="8" type="number" id="password" name="username"><br><br>
+
+
+    <label for="Confirm password">Confirm Password: *</label><br>
+    <input required maxlength="8" type="number" id="password" name="Confirm Password">
+</fieldset>
+
+
+    <fieldset>
+        <legend>General Information</legend>
+
+        <label for="first_name">First name: *</label><br>
+        <input type="text" id="first_name" name="frame"> <br><br>
+        <label for="last_name">Last name: *</label><br>
+        <input type="text" id="last_name" name="frame"><br><br>
+        <label for="email">Email: *</label><br>
+        <input type="text" id="email" name="frame" ><br><br>
+        <label for="dob">DOB: *</label><br>
+        <input type="date" id="dob" name="frame" ><br><br>
+
+
+        <label for="gender">Gender: *</label><br>
+        <input type="radio" name="gender" id="gender_male" value="Male" <label for="gender_male">Male</label>
+        <input type="radio" name="gender" id="gender_female" value="female" <label for="gender_female">Female</label> 
+        <input type="radio" name="gender" id="gender_other" value="gender"  <label for="gender_other">Other</label><br><br>
+
+        <label for="skills">Skills: *</label>
+        <input type="checkbox" name="html" id="skills_html" value="HTML" <label for="skills_html">HTML</label>
+        <input type="checkbox" name="css" id="skills_css" value="CSS" <label for="skills_css">CSS</label> 
+        <input type="checkbox" name="js" id="skills_js" value="JS"  <label for="skills_js">JS</label><br><br>
+
+        <label for="your_photo">Upload your Photo: *</label><br>
+        <input accept=".jpeg,.jpg,.png" type="file" name="your_photo" id="your_photo"><br><br>
+      
+        <label for="your_cv">CV: *</label><br>
+        <input accept=".pdf,.docx" type="file" name="your_pdf" id="your_pdf">
+      
+    </fieldset>
+
+    <fieldset>
+        <legend>Country</legend>
+        <label for="country">Country</label><br>
+        <select name="country" id="country">
+
+        </select>
+    </fieldset>
+
+</form>
+</body>
+</html>
