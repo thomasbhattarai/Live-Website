@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter PIN</title>
+    <link rel="stylesheet" href="propose.css">
+</head>
+<body>
+    <div class="container">
+        <h1>A Special Message Awaits 💍</h1>
+        <p>Enter the secret PIN to unlock your surprise.</p>
+        <input type="password" id="pinInput" placeholder="Enter PIN" maxlength="4">
+        <button onclick="checkPIN()">Unlock</button>
+        <p id="error" style="color: red; display: none;">Incorrect PIN. Try again!</p>
+    </div>
+
+    <script>
+        function checkPIN() {
+            const enteredPIN = document.getElementById("pinInput").value;
+            const correctPIN = "143"; // Change this to your secret PIN
+            
+            if (enteredPIN === correctPIN) {
+                window.location.href = "propose.html"; // Redirect if PIN is correct
+            } else {
+                document.getElementById("error").style.display = "block"; // Show error if wrong
+            }
+        }
+    </script>
+</body>
+</html>
