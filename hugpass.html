@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Password</title>
+    <link rel="stylesheet" href="hug.css">
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById("password").value;
+            var correctPassword = "shivajatta"; // Change this password if needed
+
+            if (enteredPassword === correctPassword) {
+                window.location.href = "hug.html";
+            } else {
+                document.getElementById("error").innerText = "Incorrect password. Try again!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Password to Unlock 🤗</h1>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="checkPassword()">Unlock</button>
+        <p id="error" style="color: red;"></p>
+        <p class="hint">Hint: The place where we first hugged</p>
+    </div>
+</body>
+</html>
