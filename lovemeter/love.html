@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Love Calculator 💖 - Find Your Compatibility Score</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Use our fun and magical Love Calculator to find your love compatibility score! Enter your names and see the percentage of love between you and your partner." />
+  <meta name="keywords" content="Love Calculator, Love Compatibility, Relationship Test, Name Compatibility, Valentine Game, Love Test Online, Couple Match, Fun Quiz" />
+  <meta name="author" content="Thomas - ValoDev" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Love Calculator 💖 - Find Your Love Compatibility" />
+  <meta property="og:description" content="Discover how much love sparks between you and your partner using our magical love calculator!" />
+  <meta property="og:image" content="https://yourdomain.com/images/preview-love-calculator.png" />
+  <meta property="og:url" content="https://yourdomain.com/love-calculator" />
+  <meta property="og:site_name" content="Love Calculator" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Love Calculator Preview" />
+  <meta property="og:image:type" content="image/png" />
+  
+  
+  
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Love Calculator 💖 - Find Your Love Compatibility" />
+  <meta name="twitter:description" content="Enter two names and see the percentage of love. It's fun, fast, and a little magical." />
+  <meta name="twitter:image" content="https://yourdomain.com/images/preview-love-calculator.png" />
+  <meta name="twitter:site" content="@yourtwitterhandle" />
+  <meta name="twitter:creator" content="@yourtwitterhandle" />
+  <meta name="twitter:image:alt" content="Love Calculator Preview" />
+  <meta name="theme-color" content="#ff4ecd" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Love Calculator" />
+  <link rel="apple-touch-icon" href="https://yourdomain.com/images/icon.png" />
+  <link rel="icon" href="https://yourdomain.com/images/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="https://yourdomain.com/manifest.json" />
+  <link rel="shortcut icon" href="https://yourdomain.com/images/favicon.ico" type="image/x-icon" />
+  <link rel="mask-icon" href="https://yourdomain.com/images/icon.png" color="#ff4ecd"
+  <meta name="msapplication-TileColor" content="#ff4ecd" />
+
+  
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ====== Fonts & Reset ====== */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ====== Animated Gradient Background ====== */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      padding: 1rem;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ====== Container Card ====== */
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px solid #ff4ecd;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 25px #ff4ecd88;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #ff4ecd;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      background: #333;
+      color: white;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      background: #444;
+    }
+
+    button {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff4ecd;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #ff1ebd;
+      transform: scale(1.03);
+    }
+
+    #result {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ====== Responsive Design ====== */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      input, button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💖 Love Calculator 💖</h1>
+    <form id="loveForm">
+      <input type="text" id="name1" placeholder="Your Name" required />
+      <input type="text" id="name2" placeholder="Partner's Name" required />
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById("loveForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name1 = document.getElementById("name1").value.toLowerCase();
+      const name2 = document.getElementById("name2").value.toLowerCase();
+      const combined = name1 + name2;
+
+      const count = (char) => [...combined].filter(c => c === char).length;
+
+      const trueScore = count('t') + count('r') + count('u') + count('e');
+      const loveScore = count('l') + count('o') + count('v') + count('e');
+      const score = parseInt(`${trueScore}${loveScore}`);
+
+      let message = `❤️ You love ${score}% to your partner.`;
+
+      if (score < 10 || score > 90) {
+        message = `💘 You love ${score}% to your partner. You go together like coke and mentos!`;
+      } else if (score >= 40 && score <= 70) {
+        message = `💕 You love ${score}% to your partner. Pretty compatible! Keep it blooming.`;
+      }
+
+      document.getElementById("result").innerHTML = `<p>${message}</p>`;
+    });
+  </script>
+</body>
+</html>
