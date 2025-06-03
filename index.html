@@ -1,210 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Love Calculator 💖 - Find Your Compatibility Score</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Use our fun and magical Love Calculator to find your love compatibility score! Enter your names and see the percentage of love between you and your partner." />
-  <meta name="keywords" content="Love Calculator, Love Compatibility, Relationship Test, Name Compatibility, Valentine Game, Love Test Online, Couple Match, Fun Quiz" />
-  <meta name="author" content="Thomas - ValoDev" />
-  <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Bhattarai</title>
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Love Calculator 💖 - Find Your Love Compatibility" />
-  <meta property="og:description" content="Discover how much love sparks between you and your partner using our magical love calculator!" />
-  <meta property="og:image" content="https://yourdomain.com/images/preview-love-calculator.png" />
-  <meta property="og:url" content="https://yourdomain.com/love-calculator" />
-  <meta property="og:site_name" content="Love Calculator" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="fr_FR" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Love Calculator Preview" />
-  <meta property="og:image:type" content="image/png" />
-  
-  
-  
+    <link rel="icon" href="images/about.png" type="image/x-icon">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Love Calculator 💖 - Find Your Love Compatibility" />
-  <meta name="twitter:description" content="Enter two names and see the percentage of love. It's fun, fast, and a little magical." />
-  <meta name="twitter:image" content="https://yourdomain.com/images/preview-love-calculator.png" />
-  <meta name="twitter:site" content="@yourtwitterhandle" />
-  <meta name="twitter:creator" content="@yourtwitterhandle" />
-  <meta name="twitter:image:alt" content="Love Calculator Preview" />
-  <meta name="theme-color" content="#ff4ecd" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Love Calculator" />
-  <link rel="apple-touch-icon" href="https://yourdomain.com/images/icon.png" />
-  <link rel="icon" href="https://yourdomain.com/images/favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="https://yourdomain.com/manifest.json" />
-  <link rel="shortcut icon" href="https://yourdomain.com/images/favicon.ico" type="image/x-icon" />
-  <link rel="mask-icon" href="https://yourdomain.com/images/icon.png" color="#ff4ecd"
-  <meta name="msapplication-TileColor" content="#ff4ecd" />
+    <link rel="stylesheet" href="style.css">
 
-  
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* ====== Fonts & Reset ====== */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* ====== Animated Gradient Background ====== */
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      color: white;
-      padding: 1rem;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* ====== Container Card ====== */
-    .container {
-      background: rgba(0, 0, 0, 0.5);
-      border: 2px solid #ff4ecd;
-      border-radius: 20px;
-      padding: 2rem;
-      text-align: center;
-      max-width: 400px;
-      width: 100%;
-      box-shadow: 0 0 25px #ff4ecd88;
-      backdrop-filter: blur(10px);
-      animation: fadeIn 1s ease;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #ff4ecd;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input {
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 10px;
-      outline: none;
-      background: #333;
-      color: white;
-      transition: 0.3s;
-    }
-
-    input:focus {
-      background: #444;
-    }
-
-    button {
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 10px;
-      background-color: #ff4ecd;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    button:hover {
-      background-color: #ff1ebd;
-      transform: scale(1.03);
-    }
-
-    #result {
-      margin-top: 1.5rem;
-      font-size: 1.2rem;
-      animation: fadeIn 0.6s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* ====== Responsive Design ====== */
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      input, button {
-        font-size: 0.9rem;
-        padding: 0.7rem;
-      }
-    }
-  </style>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Love Calculator</h1>
-    <form id="loveForm">
-      <input type="text" id="name1" placeholder="Your Name" required />
-      <input type="text" id="name2" placeholder="Partner's Name" required />
-      <button type="submit">Calculate</button>
-    </form>
-    <div id="result"></div>
-  </div>
 
-  <script>
-    document.getElementById("loveForm").addEventListener("submit", function (e) {
-      e.preventDefault();
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Thomas.<span class="animate" style="--i:1;"></span></a>
 
-      const name1 = document.getElementById("name1").value.toLowerCase();
-      const name2 = document.getElementById("name2").value.toLowerCase();
-      const combined = name1 + name2;
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
-      const count = (char) => [...combined].filter(c => c === char).length;
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <!-- <a href="#contact">Contact</a> -->
 
-      const trueScore = count('t') + count('r') + count('u') + count('e');
-      const loveScore = count('l') + count('o') + count('v') + count('e');
-      const score = parseInt(`${trueScore}${loveScore}`);
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
 
-      let message = `❤️ You love ${score}% to your partner.`;
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Thomas Bhattarai</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Front-End Developer</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>I am a dedicated, self-assured, and eager learner who is constantly looking for opportunities to pick up
+                the new abilities.
+                I particularly want to put my knowledge and experience in Graphic Design and Web Development to use.
+                To the best of my knowledge, avidly seeks to serve a professional organization with sincere devotion,
+                diligence, and commitment.
+                <span class="animate" style="--i:4;"></span>
+            </p>
 
-      if (score < 10 || score > 90) {
-        message = `💘 You love ${score}% to your partner. You go together like coke and mentos!`;
-      } else if (score >= 40 && score <= 70) {
-        message = `💕 You love ${score}% to your partner. Pretty compatible! Keep it blooming.`;
-      }
+            <!-- <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+                <span class="animate" style="--i:5;"></span>
+            </div> -->
+        </div>
 
-      document.getElementById("result").innerHTML = `<p>${message}</p>`;
-    });
-  </script>
+        <div class="home-sci">
+            <a href="https://github.com/thomasbhattarai"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/thomasbhattarai/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/thomas_bhattarai/"><i class='bx bxl-instagram'></i></a>
+            <span class="animate" style="--i:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--i:2;"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Hi there! Glad to see you here.<span class="animate scroll" style="--i:3;"></span></h3>
+            <p>Hello! Thomas Bhattarai here. A technology fanatic!<br>
+                <span class="animate scroll" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box btns">
+                <a href="mailto:thomasbhattarai2061@gmail.com" class="btn">Contact Me</a>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2017 - 2018</div>
+                            <h3>Bachelor's Degree - Tribhuwan University</h3>
+                            <p>I am pursuing Bachelors of Computer Application
+                                at Swastik College, Bhaktapur, Nepal.
+                                I have been studying here since 2022.
+                                I have learned many things about computer science.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2018 - 2019</div>
+                            <h3>High School Degree - Tribhuwan University</h3>
+                            <p>I have completed my high school degree from Reliance International
+                                Academy, Kathamandu, Nepal on Science stream. 
+                                 I have learned many things about science and technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2020</div>
+                            <h3>School Degree - Tribhuwan University</h3>
+                            <p>I have completed my schooling from Reliance International Academy School at
+                                Kathamandu, Nepal. With better GPA, I progressed myself.</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2017 - 2018</div>
+                            <h3>Web Developer</h3>
+                            <p>Developed responsive and user-friendly websites using HTML, CSS and JavaScript, 
+                               Experienced in creating optimized, SEO-friendly designs with a focus on performance and user experience</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2018 - 2019</div>
+                            <h3>Python Developer</h3>
+                            <p>Motivated beginner Python developer learning to build projects, automate tasks, and apply core programming concepts in real-world problem solving</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2020</div>
+                            <h3>Graphics Designer</h3>
+                            <p>Beginner graphic designer exploring tools like Photoshop and Canva to create simple, creative designs for social media and personal projects.</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>67%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Graphic Design <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>SEO Marketing <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section> -->
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; Thomas. by Thomas Bhattarai</p>
+
+            <span class="animate scroll" style="--i:1;"></span>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
