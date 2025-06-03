@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+ <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Bhattarai</title>
+    <title>Thomas Bhattarai | Front-End Developer Portfolio</title>
+    <meta name="description" content="Thomas Bhattarai is a Front-End Developer based in Nepal, specializing in web development, graphic design, and SEO-friendly websites. Explore my portfolio, skills, and education.">
+    <meta name="keywords" content="Thomas Bhattarai, Front-End Developer, Web Developer, Graphic Designer, Nepal, HTML, CSS, JavaScript, Python, SEO">
+    <meta name="author" content="Thomas Bhattarai">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="Thomas Bhattarai | Front-End Developer Portfolio">
+    <meta property="og:description" content="Portfolio of Thomas Bhattarai, a Front-End Developer from Nepal skilled in web development, graphic design, and SEO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thomasbhattarai.com.np">
+    <meta property="og:image" content="https://thomasbhattarai.com.np/images/about.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thomas Bhattarai | Front-End Developer Portfolio">
+    <meta name="twitter:description" content="Explore the portfolio of Thomas Bhattarai, a Front-End Developer from Nepal with expertise in web development and graphic design.">
+    <meta name="twitter:image" content="https://thomasbhattarai.com.np/images/about.png">
 
     <link rel="icon" href="images/about.png" type="image/x-icon">
-
+    <link rel="canonical" href="https://thomasbhattarai.com.np">
     <link rel="stylesheet" href="style.css">
-
-    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Thomas Bhattarai",
+      "jobTitle": "Front-End Developer",
+      "url": "https://thomasbhattarai.com.np",
+      "sameAs": [
+        "https://github.com/thomasbhattarai",
+        "https://www.linkedin.com/in/thomasbhattarai/",
+        "https://www.instagram.com/thomas_bhattarai/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bhaktapur",
+        "addressRegion": "Bagmati",
+        "addressCountry": "Nepal"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://thomasbhattarai.com.np",
+      "name": "Thomas Bhattarai Portfolio",
+      "description": "Portfolio of Thomas Bhattarai, a Front-End Developer from Nepal."
+    }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
 </head>
+
 
 <body>
 
     <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Thomas.<span class="animate" style="--i:1;"></span></a>
-
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <!-- <a href="#contact">Contact</a> -->
-
+        <header class="header">
+        <a href="/" class="logo">Thomas.<span class="animate" style="--i:1;"></span></a>
+        <div class="bx bx-menu" id="menu-icon" aria-label="Toggle Navigation Menu"><span class="animate" style="--i:2;"></span></div>
+        <nav class="navbar" role="navigation">
+            <a href="#home" class="active" aria-label="Home Page">Home</a>
+            <a href="#about" aria-label="About Thomas Bhattarai">About</a>
+            <a href="#education" aria-label="Education and Experience">Education</a>
+            <a href="#skills" aria-label="Skills and Expertise">Skills</a>
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
         </nav>
@@ -50,18 +96,12 @@
                 diligence, and commitment.
                 <span class="animate" style="--i:4;"></span>
             </p>
-
-            <!-- <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
-                <span class="animate" style="--i:5;"></span>
-            </div> -->
         </div>
 
-        <div class="home-sci">
-            <a href="https://github.com/thomasbhattarai"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/thomasbhattarai/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://www.instagram.com/thomas_bhattarai/"><i class='bx bxl-instagram'></i></a>
+       <div class="home-sci">
+            <a href="https://github.com/thomasbhattarai" aria-label="Thomas Bhattarai's GitHub Profile"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/thomasbhattarai/" aria-label="Thomas Bhattarai's LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/thomas_bhattarai/" aria-label="Thomas Bhattarai's Instagram Profile"><i class='bx bxl-instagram'></i></a>
             <span class="animate" style="--i:6;"></span>
         </div>
 
@@ -86,7 +126,7 @@
             </p>
 
             <div class="btn-box btns">
-                <a href="mailto:thomasbhattarai2061@gmail.com" class="btn">Contact Me</a>
+                <a href="mailto:thomasbhattarai2061@gmail.com" class="btn" aria-label="Contact Thomas Bhattarai via Email">Contact Me</a>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
         </div>
@@ -293,7 +333,7 @@
         </div>
 
         <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home" aria-label="Back to Top"><i class='bx bx-up-arrow-alt'></i></a>
 
             <span class="animate scroll" style="--i:3;"></span>
         </div>
