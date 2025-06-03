@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Thomas Bhattarai Blog</title>
+    <link>https://thomasbhattarai.com.np</link>
+    <description>Web development and graphic design insights by Thomas Bhattarai</description>
+    <item>
+      <title>How to Optimize a Website for SEO in Nepal</title>
+      <link>https://thomasbhattarai.com.np/blog/seo-nepal</link>
+      <description>Tips for improving website rankings in Nepal.</description>
+      <pubDate>Tue, 03 Jun 2025 14:50:00 +0545</pubDate>
+    </item>
+  </channel>
+</rss>

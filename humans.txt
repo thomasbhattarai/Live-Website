@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Thomas Bhattarai
+Contact: thomasbhattarai2061@gmail.com
+Location: Bhaktapur, Nepal
+Twitter: Not available
+LinkedIn: https://www.linkedin.com/in/thomasbhattarai/
+GitHub: https://github.com/thomasbhattarai
+
+/* SITE */
+Last update: 2025/06/03
+Language: English
+Doctype: HTML5
+Standards: HTML, CSS, JavaScript
+Components: Boxicons
