@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thomasbhattarai.com.np/sitemap.xml
