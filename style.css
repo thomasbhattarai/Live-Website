@@ -645,8 +645,10 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
+    padding: 2rem 5%;
     background: var(--second-bg-color);
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .footer-text,
@@ -656,6 +658,7 @@ span {
 
 .footer-text p {
     font-size: 1.6rem;
+    margin: 0;
 }
 
 .footer-iconTop a {
@@ -669,6 +672,7 @@ span {
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .footer-iconTop a::before {
@@ -697,6 +701,76 @@ span {
     color: var(--main-color);
 }
 
+/* Media query for tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 3%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-text p {
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+
+    .footer-iconTop a {
+        padding: .6rem;
+        border-radius: .5rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 2rem;
+    }
+}
+
+/* Media query for mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1rem 2%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-text p {
+        font-size: 1.2rem;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    .footer-iconTop a {
+        padding: .5rem;
+        border-radius: .4rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 1.6rem;
+    }
+}
+
+/* Media query for very small screens (max-width: 360px) */
+@media (max-width: 360px) {
+    .footer {
+        padding: 0.8rem 1%;
+    }
+
+    .footer-text p {
+        font-size: 1rem;
+    }
+
+    .footer-iconTop a {
+        padding: .4rem;
+        border-radius: .3rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 1.4rem;
+    }
+}
 /* ANIMATION RELOAD AND SCROLL */
 .animate {
     position: absolute;
