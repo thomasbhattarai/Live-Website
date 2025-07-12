@@ -818,7 +818,7 @@ section:nth-child(odd) .animate.scroll,
     width: 0;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { 
     color: var(--second-bg-color);
     background: var(--main-color);
   }
